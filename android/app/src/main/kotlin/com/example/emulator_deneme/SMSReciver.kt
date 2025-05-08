@@ -465,7 +465,7 @@ class SMSReciver( private val eventSink: EventChannel.EventSink? ) : BroadcastRe
             .build()
         val bertClassifier = BertNLClassifier.createFromFileAndOptions(
             context,
-            "mobilebert_son.tflite",
+            "mobilebert_model.tflite",
             options
         )
         val classifier = bertClassifier.classify(message)
